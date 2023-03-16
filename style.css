@@ -1,0 +1,162 @@
+*{
+    margin: 0; padding: 0;box-sizing: border-box;
+    
+}
+
+main{
+    width: 90%;
+    margin: 50px auto;
+    border: 1px solid gray;
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap:25px;
+}
+
+@media only screen and (max-width: 800px) {
+main{width: 90%;
+    margin: 50px auto;
+    border: 1px solid gray;
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:25px;
+    
+}
+
+}
+@media only screen and (max-width: 600px) {
+    main{width: 90%;
+        margin: 30px auto;
+        border: 1px solid gray;
+        display: grid;
+        grid-template-rows: 150px 150px 150px 150px;
+        grid-template-columns: 1fr 1fr;
+        gap:15px;
+    }
+    
+    }
+
+
+    @media only screen and (max-width: 400px) {
+        main{width: 90%;
+            margin: 30px auto;
+            border: 1px solid gray;
+            display: grid;
+            grid-template-rows: 150px 150px 150px 150px;
+            grid-template-columns: 1fr;
+            gap:15px;
+        }
+        
+        }
+    
+
+.slider-box {
+    width     : 90%;
+    max-height: 90vh;
+    position  : relative;
+    overflow  : hidden;
+    margin    : 30px auto;
+}
+
+#slider {
+    width     : 100%;
+    display   : inline-flex;
+    transition: 0.7s;
+}
+
+#slider img {
+    width: 100%;
+}
+
+.indicators {
+    position : absolute;
+    left     : 50%;
+    bottom   : 20px;
+    transform: translateX(-50%);
+}
+
+.indicators span {
+    display      : inline-block;
+    width        : 15px;
+    height       : 15px;
+    border-radius: 50%;
+    background   : rgba(255, 0, 255, 0.2);
+    cursor       : pointer;
+}
+
+.active {
+    background: gray !important;
+}
+
+.box1{background-color:aliceblue;
+padding:4px ;
+position:relative;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow:hidden;
+}
+.box{}
+
+
+.box2{background-color:blue}
+.box3{background-color:aqua}
+.box4{background-color:bisque}
+.box5{background-color:aqua}
+.box6{background-color:beige}
+.box7{background-color:orange}
+.box8{background-color:yellow}
+.box9{background-color:green}
+
+
+/* 
+.company_pic_box{
+background-color:red;
+grid-column:1/2 !important;
+grid-row: 1/-1!important;
+
+}
+
+.rightBox{
+   
+    background-color:yellow;
+    grid-column:2/3;
+grid-row: 1/-1;
+display:grid;
+grid-template-columns: 1fr ;
+   grid-template-rows: 1fr 1fr;
+   position: relative;
+
+
+} */
+
+
+.btn{position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);}
+
+.company_img{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
+}
+
+
+.btnBox{position: absolute;
+left: 30px;
+bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
